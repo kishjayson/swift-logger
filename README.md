@@ -1,6 +1,6 @@
 # swift-logger
 
-swift-logger is the spiritual successor to `logger` for writing entries to Unified Logs on macOS.
+A command-line tool for writing entries to Unified Logs on macOS.
 
 ```
 $ swift-logger --help
