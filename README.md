@@ -1,7 +1,5 @@
 # swift-logger
 
-A command-line tool for writing entries to Unified Logs on macOS.
-
 ```
 $ swift-logger --help
 
