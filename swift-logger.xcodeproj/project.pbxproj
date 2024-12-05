@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7597A8512CFD73FB0047075D /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 7597A8502CFD73FB0047075D /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		7597A8432CFD73B80047075D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7597A8512CFD73FB0047075D /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = "swift-logger";
 			packageProductDependencies = (
+				7597A8502CFD73FB0047075D /* ArgumentParser */,
 			);
 			productName = "swift-logger";
 			productReference = 7597A8452CFD73B80047075D /* swift-logger */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 7597A83C2CFD73B80047075D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7597A84F2CFD73FB0047075D /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7597A8462CFD73B80047075D /* Products */;
 			projectDirPath = "";
@@ -248,10 +257,15 @@
 		7597A84D2CFD73B80047075D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z375TYY86Z;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = Z375TYY86Z;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toplessbanana.swift-logger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -259,10 +273,15 @@
 		7597A84E2CFD73B80047075D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z375TYY86Z;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = Z375TYY86Z;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toplessbanana.swift-logger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -289,6 +308,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7597A84F2CFD73FB0047075D /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7597A8502CFD73FB0047075D /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7597A84F2CFD73FB0047075D /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7597A83D2CFD73B80047075D /* Project object */;
 }
