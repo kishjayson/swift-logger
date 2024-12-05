@@ -3,16 +3,16 @@
 ```
 $ swift-logger --help
 
-OVERVIEW: A command-line tool for writing entries to Unified Logs.
+OVERVIEW: A command-line tool for writing to the unified logging system.
 
-USAGE: swift-logger [--level <level>] --message <message> [--subsystem <subsystem>] [--category <category>]
+USAGE: swift-logger --message <message> [--level <level>] [--subsystem <subsystem>] [--category <category>]
 
 OPTIONS:
-  -l, --level <level>     The message's log level. (values: default, info,
-                          debug, error, fault; default: default)
-  -m, --message <message> The message to log.
-  --subsystem <subsystem> The subsystem.
-  --category <category>   The category.
+  -m, --message <message> The message to be logged.
+  -l, --level <level>     The log level. (values: default, info, debug, error,
+                          fault; default: default)
+  --subsystem <subsystem> Specify the subsystem.
+  --category <category>   Specify the category.
   --version               Show the version.
   -h, --help              Show help information.
 ```
