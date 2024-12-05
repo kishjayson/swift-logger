@@ -5,6 +5,8 @@ A command-line tool for writing entries to Unified Logs on macOS.
 ```
 $ swift-logger --help
 
+OVERVIEW: A command-line tool for writing entries to Unified Logs.
+
 USAGE: swift-logger [--level <level>] --message <message> [--subsystem <subsystem>] [--category <category>]
 
 OPTIONS:
