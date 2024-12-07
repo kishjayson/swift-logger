@@ -12,7 +12,7 @@ import OSLog
 @main
 struct App: ParsableCommand {
     static var configuration: CommandConfiguration {
-        CommandConfiguration(commandName: "swift-logger", abstract: "A command-line tool for writing to the unified logging system.", version: "1.2")
+        CommandConfiguration(commandName: "swift-logger", abstract: "A command-line tool for writing to the unified logging system.", version: "1.3")
     }
 
     enum LogLevel: String, CaseIterable, ExpressibleByArgument {
@@ -38,11 +38,11 @@ struct App: ParsableCommand {
         }
     }
 
-    @Argument(help: "The log level of the message.")
-    var level: LogLevel = .default
-    
     @Argument(help: "The message to be logged.")
     var message: String
+    
+    @Option(help: "Specify the log level.")
+    var level: LogLevel = .default
     
     @Option(name: .long, help: "Specify the subsystem.")
     var subsystem: String?
