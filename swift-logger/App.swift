@@ -38,11 +38,11 @@ struct App: ParsableCommand {
         }
     }
 
+    @Argument(help: "The log level of the message.")
+    var level: LogLevel = .default
+    
     @Argument(help: "The message to be logged.")
     var message: String
-    
-    @Argument(help: "Specify the log level.")
-    var level: LogLevel = .default
     
     @Option(name: .long, help: "Specify the subsystem.")
     var subsystem: String?
