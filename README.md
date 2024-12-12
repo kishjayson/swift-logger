@@ -27,4 +27,4 @@ $ swift-logger 'Hello, World!' --level 'error'
 $ swift-logger 'Hello, World!' --subsystem 'com.toplessbanana.swift-logger' --category 'general'
 ```
 
-![console](console.png)
+![screenshot](screenshot.png)
