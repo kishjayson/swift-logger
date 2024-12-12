@@ -1,5 +1,7 @@
 # swift-logger
 
+## Usage
+
 ```
 $ swift-logger --help
 
@@ -18,3 +20,11 @@ OPTIONS:
   --version               Show the version.
   -h, --help              Show help information.
 ```
+## Examples
+
+```
+$ swift-logger 'Hello, World!'
+$ swift-logger 'Hello, World!' --level 'error'
+$ swift-logger 'Hello, World!' --subsystem 'com.toplessbanana.swift-logger' --category 'general'
+```
+![console](console.png)
