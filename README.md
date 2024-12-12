@@ -1,7 +1,5 @@
 # swift-logger
 
-## Usage
-
 ```
 $ swift-logger --help
 
@@ -20,7 +18,8 @@ OPTIONS:
   --version               Show the version.
   -h, --help              Show help information.
 ```
-## Examples
+
+## Example
 
 ```
 $ swift-logger 'Hello, World!'
