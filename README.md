@@ -1,4 +1,5 @@
 # swift-logger
+### Usage
 
 ```
 $ swift-logger --help
@@ -19,12 +20,12 @@ OPTIONS:
   -h, --help              Show help information.
 ```
 
-## Example
-
+# Example
+### Commands
 ```
 $ swift-logger 'Hello, World!'
 $ swift-logger 'Hello, World!' --level 'error'
 $ swift-logger 'Hello, World!' --subsystem 'com.toplessbanana.swift-logger' --category 'general'
 ```
-
+### Output
 ![screenshot](screenshot.png)
