@@ -1,18 +1,17 @@
 //
-//  main.swift
+//  SwiftLogger.swift
 //  swift-logger
 //
 //  Created by Jayson Kish on 12/1/24.
 //
 
 import ArgumentParser
-import Foundation
 import OSLog
 
 @main
 struct App: ParsableCommand {
     static var configuration: CommandConfiguration {
-        CommandConfiguration(commandName: "swift-logger", abstract: "A command-line tool for writing to the unified logging system.", version: "1.3")
+        CommandConfiguration(commandName: "swift-logger", abstract: "A command-line tool for writing to the unified logging system.", version: "1.4")
     }
 
     enum LogLevel: String, CaseIterable, ExpressibleByArgument {
@@ -41,13 +40,13 @@ struct App: ParsableCommand {
     @Argument(help: "The message to be logged.")
     var message: String
     
-    @Option(help: "Specify the log level.")
+    @Option(help: "The log level to use.")
     var level: LogLevel = .default
     
-    @Option(name: .long, help: "Specify the subsystem.")
+    @Option(name: .long, help: "An identifier that represents the script subsystem that’s logging information.")
     var subsystem: String?
     
-    @Option(name: .long, help: "Specify the category.")
+    @Option(name: .long, help: "A category within the specified subsystem.")
     var category: String?
     
     func run() throws {
